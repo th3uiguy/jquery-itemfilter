@@ -1,0 +1,55 @@
+.if-container{
+	border: 1px solid #ccc;
+	cursor: text;
+	zoom: 1;
+}
+.if-state-active{
+	border-color: #999;
+}
+.if-container:after{
+	content: ".";
+	display:block;
+	height: 0;
+	visibility: hidden;
+	clear:both;
+}
+.if-container input{
+	font-size: 1em;
+	border: none !important;
+	width:78%;
+	margin-right:20px;
+	line-height:1em;
+	padding:0;
+	margin:0.3em;
+	float:left;
+}
+.if-container input.if-empty{
+	color:#999;
+	font-style:italic;
+}
+.if-container .if-icon-search{
+	margin: 0.3em;
+	float: left;
+}
+.if-container .if-clear-button{
+	margin:0.3em;
+	float:right;
+	border: none;
+	background: none;
+	visibility: hidden;
+	display:inline-block;
+	cursor:pointer;
+}
+.if-filtered{
+	display:none !important;
+}
+.if-icon{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url("icons_16x16.png") no-repeat;
+}
+.if-icon-search{ background-position: top left; }
+.if-icon-clear{ background-position: top right; }
+.if-state-active .if-icon-search{ background-position: bottom left; }
+.if-state-hover .if-icon-clear{ background-position: bottom right; }
