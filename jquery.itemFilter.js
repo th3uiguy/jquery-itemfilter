@@ -30,7 +30,7 @@ $.widget( "ui.itemFilter", {
 			});
 		
 		if(opts.showClear != false){
-			$clearBtn = $('<span class="if-clear-button if-state-default"></span>')
+			self.clearBtn = $('<span class="if-clear-button if-state-default"></span>')
 				.append('<span class="if-icon if-icon-clear"></span>')
 				.hover(
 					function(){ $(this).addClass('if-state-hover') },
@@ -39,7 +39,7 @@ $.widget( "ui.itemFilter", {
 				.click(function(){
 					$self.val('').focus().triggerHandler('keyup');
 				});
-			self.container.append($clearBtn);
+			self.container.append(self.clearBtn);
 		}
 		
 		$self
@@ -50,7 +50,7 @@ $.widget( "ui.itemFilter", {
 					return false;
 				}
 				if(self.timer) clearTimeout(self.timer);
-				$clearBtn.css('visibility', (phrase.length > 0)? 'visible' : 'hidden');
+				self.clearBtn.css('visibility', (phrase.length > 0)? 'visible' : 'hidden');
 				self.timer = setTimeout(function(){
 					if(phrase.length < opts.minLength){
 						$(filterItems).show();
