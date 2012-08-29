@@ -28,7 +28,7 @@ Options
 ---------------------
 #### items ####
 *type: jQuery Object or Selector*   
-*default: $('>\*')*
+_default: $('>*')_
 
 #### placeholder ####
 *type: String*   
