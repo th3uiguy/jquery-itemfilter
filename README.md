@@ -9,7 +9,7 @@ Demo: [http://jsfiddle.net/th3uiguy/MRu67/](http://jsfiddle.net/th3uiguy/MRu67/)
 
 ## Description ##
 
-jQuery Item Filter
+Simple text-match filter that will show/hide html elements that match the string entered by the user.
 
 
 
