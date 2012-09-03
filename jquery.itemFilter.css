@@ -1,3 +1,18 @@
+/**
+* Item Filter
+*
+* @fileoverview Simple text-match filter that will show/hide html elements that match the string entered by the user.
+* @link https://github.com/th3uiguy/jquery-itemfilter
+* @author Spencer Neese
+* @version 1.0
+* @requires jQuery UI 1.7+ and jQuery 1.3.2+
+* @license jQuery Item Filter Plugin v1.0
+*
+* Copyright 2011, Spencer Neese
+* Dual licensed under the MIT or GPL Version 2 licenses.
+* <https://raw.github.com/th3uiguy/jquery-itemfilter/master/GPL-LICENSE.txt> <https://raw.github.com/th3uiguy/jquery-itemfilter/master/MIT-LICENSE.txt>
+*/
+
 .if-container{
 	border: 1px solid #ccc;
 	cursor: text;

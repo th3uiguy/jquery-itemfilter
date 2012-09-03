@@ -27,7 +27,7 @@ $('input#filterPhrase').itemFilter({
 Options
 ---------------------
 #### items ####
-*type: jQuery Object or Selector*   
+_type: jQuery Object or Selector_   
 _default: $('>*')_
 
 #### placeholder ####
@@ -35,29 +35,29 @@ _default: $('>*')_
 *default: 'Type Search Here'*
 
 #### ignore ####
-*type: jQuery Object or Selector*   
-*default: '.ignore'*
+_type: jQuery Object or Selector_   
+_default: '.ignore'_
 
 #### showClear ####
-*type: Boolean*   
-*default: true*
+_type: Boolean_   
+_default: true_
 
 #### filterClass ####
-*type: String*   
-*default: 'if-f*iltered'
+_type: String_   
+_default: 'if-filtered'_
 
 #### minLength ####
-*type: Integer*   
-*default: 0*
+_type: Integer_   
+_default: 0_
 
 #### delay ####
-*type: Integer*   
-*default: 200*
+_type: Integer_   
+_default: 200_
 
 
 
 <br /><br />
-Copyright 2012, Spencer Neese   
+Copyright (c) 2012, Spencer Neese [https://github.com/th3uiguy/](https://github.com/th3uiguy/)   
 Dual licensed under the 
 [MIT](https://raw.github.com/th3uiguy/jquery-itemfilter/master/MIT-LICENSE.txt) or 
 [GPL](https://raw.github.com/th3uiguy/jquery-itemfilter/master/GPL-LICENSE.txt) Version 2 licenses. 
