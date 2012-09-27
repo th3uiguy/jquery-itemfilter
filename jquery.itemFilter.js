@@ -71,10 +71,18 @@ $.widget( "ui.itemFilter", {
 						$(filterItems).show();
 						return;
 					}
-					toMatch = new RegExp(phrase.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&"), "i");
+					var str = $.trim(phrase).replace(/[-[\]{}()*+?.,\\^$|#]/g, "\\$&");
+					var group = str.split(/[\s]+/);
+					var size = group.length;
+					str = "(" + group[0];
+					for(var i = 1; i < size; i++){
+						str += ")[.\\s]*(" + group[i];
+					}
+					str += ")";
+					toMatch = new RegExp(str, "i");
 					$(opts.items).each(function(){
 						$(this).not(opts.ignore).toggleClass(opts.filterClass, !toMatch.test($(this).text()));
-					})
+					});
 				}, opts.delay);
 			})
 			.blur(function(){
